@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from  'dotenv';
 import { connectDB } from './database/db.js';
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 const app = express();
 
@@ -15,7 +15,12 @@ app.get('/', (req, res) => {
 })
 
 import userRoutes from './routes/user.js';
+import courseRoutes from './routes/course.js';
+import adminRoutes from './routes/admin.js';
+
 app.use('/api', userRoutes);
+app.use('/api', courseRoutes);
+app.use('/api', adminRoutes);
 
 const startServer = async () => {
   try {
