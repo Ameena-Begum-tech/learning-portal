@@ -1,0 +1,92 @@
+.about {
+  padding: 80px 0;
+  background: #f8fdfc;
+  text-align: center;
+  min-height: 70vh;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #139e8e;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #139e8e;
+  font-weight: bold;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card .icon {
+  font-size: 40px;
+  color: #139e8e;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.about-footer {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.about-footer h4 {
+  font-size: 22px;
+  color: #139e8e;
+  margin-bottom: 15px;
+}
+
+.about-footer p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

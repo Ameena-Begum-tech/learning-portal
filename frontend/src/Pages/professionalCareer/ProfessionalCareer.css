@@ -1,0 +1,76 @@
+/* Container */
+.resume-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fdfdfd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.resume-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Form */
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-form input,
+.resume-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.resume-form input:focus,
+.resume-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+/* Textarea */
+.resume-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Button */
+.resume-form button {
+  padding: 10px 16px;
+  background-color: #139e8e;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume-form button:hover {
+  background-color: #0c7e71;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .resume-title {
+    font-size: 24px;
+  }
+}
