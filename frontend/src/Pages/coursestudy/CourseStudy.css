@@ -1,0 +1,106 @@
+/* Course Study Page */
+.course-study-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: #e0f7f5; /* soft background for contrast */
+}
+
+/* Course Card */
+.course-card1 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Course Image */
+.course-image {
+  width: 350px;
+  object-fit: cover;
+}
+
+/* Course Content */
+.course-content1 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headings & Text */
+.course-content1 h2 {
+  font-size: 28px;
+  color: #139e8e;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.course-content1 p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.course-details1 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Lecture Button */
+.lecture-btn1 {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #139e8e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lecture-btn1:hover {
+  background-color: #0e7a6b;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-card1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .course-image {
+    width: 100%;
+    max-height: 250px;
+    text-align: center;
+  }
+
+  .course-details1 {
+    text-align: center;
+  }
+}
+
+.img1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 10px;
+}

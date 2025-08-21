@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;  
+  gap: 12px;             
+  font-size: 25px;
+  font-weight: 600;
+  color: #139e8e;
+}
+
+.logo {
+
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  color: #139e8e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+.back-btn:hover {
+  color: #0f8678;
+}
+
+.link {
+  display: flex;
+  gap: 2rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #139e8e;
+}
+
+@media (max-width: 768px) {
+  .logo-div {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .link {
+    gap: 0.5rem;
+  }
+
+  .link a {
+    font-size: 14px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+.logo-name{
+  margin-bottom: 30px;
+}
